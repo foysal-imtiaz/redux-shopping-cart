@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import cartIcon from '../assets/cart-icon.png'
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
         <div className='w-8'>
             <Link to="/cart" className='flex'>
               
-              <img src='../assets/cart-icon.png' alt="icon" className=" relative "/>
+              <img src={cartIcon} alt="icon" className=" relative "/>
               <span className=' font-bold'>{cartProducts.length}</span>
           
             </Link>
